@@ -1,2 +1,2 @@
-# font-template
-font template by wind
+# front-template
+front template by wind

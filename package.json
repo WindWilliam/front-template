@@ -1,0 +1,15 @@
+{
+  "name": "front-template",
+  "version": "0.4.5",
+  "description": "front template for vue3/react.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "front template"
+  ],
+  "author": "wind",
+  "license": "MIT",
+  "packageManager": "pnpm@10.33.0"
+}

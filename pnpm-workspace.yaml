@@ -1,0 +1,26 @@
+# pnpm-workspace.yaml
+
+# 优先使用冻结的lockfile
+preferFrozenLockfile: true
+
+# 使用的nodejs版本
+useNodeVersion: 22.22.2
+# If you need to specify a custom Node.js for a project in the workspace,
+# use the executionEnv.nodeVersion field of package.json instead.
+# nodeMirror:
+#   - release: https://registry.npmmirror.com/mirrors/node/
+#   - rc: https://registry.npmmirror.com/mirrors/node-rc/
+#   - nightly: https://registry.npmmirror.com/mirrors/node-nightly/
+
+# 插件包支持的nodejs最低版本
+# nodeVersion: 16.20.0
+# engineStrict: true
+
+# 包含的包
+packages:
+  # 包含根目录下的所有包
+  - 'packages/*'
+  # 包含 apps 目录下的所有包
+  - 'apps/*'
+  # 排除特定目录
+  - '!**/node_modules'
