@@ -1,0 +1,31 @@
+# EditorConfig is awesome: https://editorconfig.org
+# 通用前端脚手架的 EditorConfig 配置
+# 用于统一代码格式，避免不同开发环境下的代码格式差异
+
+# top-most EditorConfig file
+root = true
+
+# Unix-style newlines with a newline ending every file
+[*]
+# 使用 UTF-8 字符集
+charset = utf-8
+# 使用 Unix 风格的换行符
+end_of_line = lf
+# 使用空格进行缩进
+indent_style = space
+# 缩进大小为 2 个空格
+indent_size = 2
+# 确保文件以换行符结束
+insert_final_newline = true
+# 移除行尾空白字符
+trim_trailing_whitespace = true
+
+# Markdown 文件配置
+# [*.{md}]
+[*.md]
+# 保持行尾空白字符（在 Markdown 中用于换行）
+trim_trailing_whitespace = false
+
+# Makefile 文件
+[Makefile]
+indent_style = tab
