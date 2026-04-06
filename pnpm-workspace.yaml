@@ -2,6 +2,8 @@
 
 # 优先使用冻结的lockfile
 preferFrozenLockfile: true
+# 严格依赖项
+strictDependents: true
 
 # 使用的nodejs版本
 useNodeVersion: 22.22.2
