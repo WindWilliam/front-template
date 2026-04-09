@@ -1,14 +1,10 @@
-import { defineConfig } from 'eslint/config';
-import tsEslint from 'typescript-eslint';
-import eslintConfigPrettier from 'eslint-config-prettier/flat';
+import { extendBaseLint } from '@front-template/config';
 
-export default defineConfig([
+const config = [
   {
-    ignores: ['node_modules', 'dist', '.turbo', '.pnpm-store'],
+    // 跳过内部依赖包 packages 和 apps 目录
+    ignores: ['node_modules', 'dist', '.turbo', '.pnpm-store', 'packages', 'apps'],
   },
-  // js.configs.recommended, // JS 文件规则，依赖@eslint/js
-  tsEslint.configs.recommended,
-  // eslint-plugin-vue：提供 Vue SFC 文件 .vue 的 lint 规则
-  // eslint-plugin-react、eslint-plugin-react-hooks：提供 React [hooks] 规则
-  eslintConfigPrettier, // 最后应用 prettier 配置
-]);
+];
+
+export default extendBaseLint(config);

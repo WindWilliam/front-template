@@ -1,4 +1,8 @@
-node_modules
-dist
 .turbo
 .pnpm-store
+.husky
+apps
+dist
+node_modules
+packages
+pnpm-lock.yaml

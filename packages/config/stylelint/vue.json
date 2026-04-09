@@ -1,0 +1,18 @@
+{
+  "extends": [
+    "./base.json",
+    "stylelint-config-recommended-vue",
+    "stylelint-config-prettier"
+  ],
+  "plugins": [],
+  "overrides": [
+    {
+      "files": ["*.vue", "**/*.vue"],
+      "customSyntax": "postcss-html"
+    }
+  ],
+  "rules": {
+    "indentation": 2,
+    "string-quotes": "double"
+  }
+}

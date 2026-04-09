@@ -1,0 +1,28 @@
+{
+  "name": "@front-template/config",
+  "private": true,
+  "version": "0.4.6",
+  "description": "front template config.",
+  "type": "module",
+  "main": "index.ts",
+  "files": [
+    "index.ts",
+    "prettier",
+    "stylelint",
+    "tsconfig"
+  ],
+  "scripts": {
+    "test": "echo front-template config test...",
+    "format": "prettier --write .",
+    "lint": "eslint",
+    "lint:fix": "eslint . --fix",
+    "lint:staged": "lint-staged",
+    "zzz": ""
+  },
+  "keywords": [
+    "front-template config"
+  ],
+  "author": "wind",
+  "license": "MIT",
+  "packageManager": "pnpm@10.33.0"
+}

@@ -1,0 +1,12 @@
+{
+  "files": [],
+  "compilerOptions": {
+    "resolveJsonModule": true,
+    "esModuleInterop": true
+  },
+  "references": [
+    {
+      "path": "./packages/config"
+    }
+  ]
+}

@@ -21,8 +21,10 @@ useNodeVersion: 22.22.2
 # 包含的包
 packages:
   # 包含根目录下的所有包
-  - 'packages/*'
+  - "packages/*"
   # 包含 apps 目录下的所有包
-  - 'apps/*'
+  - "apps/*"
+  # 包含 root 这样turbo才能执行对应任务
+  - "."
   # 排除特定目录
-  - '!**/node_modules'
+  - "!**/node_modules"
